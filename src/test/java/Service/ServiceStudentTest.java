@@ -4,21 +4,10 @@ import Domain.Student;
 import Repository.StudentRepo;
 import Validator.StudentValidator;
 import Validator.ValidationException;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.jupiter.api.Test;
-
-import org.jboss.shrinkwrap.api.ShrinkWrap;
-import org.jboss.shrinkwrap.api.asset.EmptyAsset;
-import org.jboss.shrinkwrap.api.spec.JavaArchive;
 
 
 public class ServiceStudentTest {
-
-    public static JavaArchive createDeployment() {
-        return ShrinkWrap.create(JavaArchive.class).addClass(ServiceStudent.class).addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
-    }
 
     @Test
     public void addStudentTestOne() {

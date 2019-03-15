@@ -4,17 +4,30 @@ import Domain.Student;
 import Repository.StudentRepo;
 import Validator.StudentValidator;
 import Validator.ValidationException;
-import org.junit.jupiter.api.Test;
+
+import Validator.StudentValidator;
+import com.google.common.collect.Iterables;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+
+import static org.junit.Assert.*;
 
 
 public class ServiceStudentTest {
 
+    private ServiceStudent srv;
+
+    @Before
+    public void setUp(){
+        StudentRepo rep = new StudentRepo(new StudentValidator(),"c:\\temp\\studenti.xml");
+        srv = new ServiceStudent(rep);
+    }
+
     @Test
     public void addStudentTestOne() {
-
-        StudentRepo rep = new StudentRepo(new StudentValidator(),"c:\\temp\\studenti.xml");
-        ServiceStudent srv = new ServiceStudent(rep);
-
         Student std = new Student("1", "Ion", 1931, "email@email.com", "Professor");
 
         try{
@@ -27,10 +40,6 @@ public class ServiceStudentTest {
 
     @Test
     public void addStudentTestTwo() {
-
-        StudentRepo rep = new StudentRepo(new StudentValidator(),"c:\\temp\\studenti.xml");
-        ServiceStudent srv = new ServiceStudent(rep);
-
         Student std2 = new Student("1", "Ion", 931, "email-email.com", "Professor");
 
         try{

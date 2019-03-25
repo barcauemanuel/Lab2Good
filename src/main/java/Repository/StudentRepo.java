@@ -2,6 +2,7 @@ package Repository;
 
 import Domain.Student;
 import Validator.Validator;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -27,9 +28,10 @@ public class StudentRepo extends AbstractRepo<Student,String> {
         loadFromFile();
     }
     public void loadFromFile(){
+        if(!fName.equals(""))
         try{
             DocumentBuilder db=builderFactory.newDocumentBuilder();
-            Document d=db.parse(new File(fName));
+            Document d = db.parse(new File(fName));
             Element e = d.getDocumentElement();
             NodeList l=e.getElementsByTagName("Student");
             for(int i=0;i<l.getLength();i++){
@@ -48,9 +50,12 @@ public class StudentRepo extends AbstractRepo<Student,String> {
                 super.save(s);
             }
         }
-        catch (Exception e){e.printStackTrace();}
+        catch (Exception e){}
     }
+
     private void writeToFile(){
+
+        if(!fName.equals(""))
         try{
             DocumentBuilder db=builderFactory.newDocumentBuilder();
             Document doc=db.newDocument();

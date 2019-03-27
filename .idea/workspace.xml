@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d953738d-bf54-4e7f-b5e2-d1a32da27674" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/AbstractRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/AbstractRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/NoteRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/NoteRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/TemeRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/TemeRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/AbstractRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Repository/AbstractRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/NoteRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Repository/NoteRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/StudentRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Repository/StudentRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/TemeRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Repository/TemeRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UI/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UI/UI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Validator/NotaValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Validator/NotaValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Validator/StudentValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Validator/StudentValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Validator/TemeValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Validator/TemeValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Service/ServiceStudentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Service/ServiceStudentTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,8 +47,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/Service/ServiceAssignmentTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+                <state relative-caret-position="85">
+                  <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -336,6 +339,11 @@
             <path>
               <item name="Lab2Good" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lab2Good" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab2Good" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab2Good" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -420,7 +428,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553676149262" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553676577026" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -577,7 +585,7 @@
       <workItem from="1552685152953" duration="1670000" />
       <workItem from="1552899957406" duration="12000" />
       <workItem from="1553517936234" duration="6344000" />
-      <workItem from="1553618450790" duration="3376000" />
+      <workItem from="1553618450790" duration="3699000" />
     </task>
     <task id="LOCAL-00001" summary="First Junit tests">
       <created>1552560697256</created>
@@ -614,7 +622,21 @@
       <option name="project" value="LOCAL" />
       <updated>1552685683415</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added tests for addTeme">
+      <created>1553676206937</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1553676206937</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added tests for addTeme">
+      <created>1553676221622</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1553676221622</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -650,7 +672,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17690000" />
+    <option name="totallyTimeSpent" value="18013000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -665,7 +687,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16204691" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16204691" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -675,7 +697,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2340195" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2340195" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.22125813" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -707,7 +729,8 @@
     <MESSAGE value="Setup language level 8" />
     <MESSAGE value="Minor adjustments" />
     <MESSAGE value="Added all tests for AddStudent" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added all tests for AddStudent" />
+    <MESSAGE value="Added tests for addTeme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tests for addTeme" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Domain/Student.java">
@@ -891,8 +914,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Service/ServiceAssignmentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+        <state relative-caret-position="85">
+          <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

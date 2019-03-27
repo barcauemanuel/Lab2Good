@@ -21,10 +21,10 @@ public abstract class AbstractRepo <E extends hasID<ID>,ID> implements CrudRepo<
      * @return elementul salvat
      */
     public E save(E el){
-        String msg=validator.validate(el);
+        String msg = validator.validate(el);
         if(msg.equals("")){
-            E el2=findOne(el.getID());
-            repo.putIfAbsent(el.getID(),el);
+            E el2 = findOne(el.getID());
+            repo.putIfAbsent(el.getID(), el);
             return el2;
         }
         else throw new ValidationException(msg);

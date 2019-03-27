@@ -27,6 +27,7 @@ public class TemeRepo extends AbstractRepo<Teme,Integer> {
         loadFromFile();
     }
     public void loadFromFile(){
+        if(!fName.equals(""))
         try{
             DocumentBuilder db=builderFactory.newDocumentBuilder();
             Document d=db.parse(new File(fName));
@@ -51,6 +52,7 @@ public class TemeRepo extends AbstractRepo<Teme,Integer> {
         catch (Exception e){e.printStackTrace();}
     }
     private void writeToFile(){
+        if(!fName.equals(""))
         try{
             DocumentBuilder db=builderFactory.newDocumentBuilder();
             Document doc=db.newDocument();

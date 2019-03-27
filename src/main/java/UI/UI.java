@@ -131,7 +131,7 @@ public class UI {
                     String dt = br.readLine();
                     int data = Integer.parseInt(dt);
                     System.out.println("Feedback: ");
-                    String fd=br.readLine();
+                    String fd = br.readLine();
                     if (srv.find(id) != null && serv.find(nr) != null) {
                         Student st = srv.find(id);
                         Teme tm = serv.find(nr);

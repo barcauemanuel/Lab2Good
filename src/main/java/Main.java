@@ -14,7 +14,7 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        StudentRepo rep=new StudentRepo(new StudentValidator(),"c:\\temp\\studenti.xml");
+        StudentRepo rep=new StudentRepo(new StudentValidator(),"C:\\Users\\Bendic Radu\\Desktop\\vvss\\Lab2Good\\src\\main\\java\\studenti.xml");
         TemeRepo repo=new TemeRepo(new TemeValidator(),"c:\\temp\\teme.xml");
         NoteRepo r=new NoteRepo(new NotaValidator());
         ServiceStudent srv=new ServiceStudent(rep);

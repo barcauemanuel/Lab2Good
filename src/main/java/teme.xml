@@ -15,4 +15,14 @@
         <deadline>3</deadline>
         <sapt_primire>1</sapt_primire>
     </Tema>
+    <Tema nr="4">
+        <descriere>Test description</descriere>
+        <deadline>3</deadline>
+        <sapt_primire>1</sapt_primire>
+    </Tema>
+    <Tema nr="5">
+        <descriere>Test description</descriere>
+        <deadline>3</deadline>
+        <sapt_primire>1</sapt_primire>
+    </Tema>
 </Teme>

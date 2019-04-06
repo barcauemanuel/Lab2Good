@@ -1,11 +1,11 @@
 package Repository;
 
 public interface CrudRepo <E,ID> {
-    public E save(E elem);
-    public E update(E elem);
-    public E delete(ID id);
-    public E findOne(ID id);
-    public Iterable<E> findAll();
-    public int size();
+    E save(E elem);
+    E update(E elem);
+    E delete(ID id);
+    E findOne(ID id);
+    Iterable<E> findAll();
+    int size();
 
 }

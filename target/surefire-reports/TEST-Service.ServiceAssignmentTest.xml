@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="Service.ServiceAssignmentTest" time="0.021" errors="0" skipped="0">
+<testsuite tests="13" failures="0" name="Service.ServiceAssignmentTest" time="0.038" errors="1" skipped="0">
   <properties>
     <property name="idea.version" value="2018.3.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,14 +62,56 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Service.ServiceAssignmentTest" name="test10" time="0.01"/>
+  <testcase classname="Service.ServiceAssignmentTest" name="test10" time="0.017"/>
+  <testcase classname="Service.ServiceAssignmentTest" name="test11" time="0"/>
+  <testcase classname="Service.ServiceAssignmentTest" name="test12" time="0"/>
+  <testcase classname="Service.ServiceAssignmentTest" name="test13" time="0.007">
+    <error message="C:\Users\Bendic%20Radu\Desktop\vvss\Lab2Good\target\test-classes\teme\temeTest.xml (The system cannot find the path specified)" type="java.io.FileNotFoundException">java.io.FileNotFoundException: C:\Users\Bendic%20Radu\Desktop\vvss\Lab2Good\target\test-classes\teme\temeTest.xml (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:213)
+	at java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:162)
+	at java.io.PrintWriter.&lt;init&gt;(PrintWriter.java:263)
+	at Service.ServiceAssignmentTest.test13(ServiceAssignmentTest.java:182)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
   <testcase classname="Service.ServiceAssignmentTest" name="test1" time="0"/>
   <testcase classname="Service.ServiceAssignmentTest" name="test2" time="0"/>
   <testcase classname="Service.ServiceAssignmentTest" name="test3" time="0"/>
-  <testcase classname="Service.ServiceAssignmentTest" name="test4" time="0"/>
-  <testcase classname="Service.ServiceAssignmentTest" name="test5" time="0.001"/>
-  <testcase classname="Service.ServiceAssignmentTest" name="test6" time="0"/>
-  <testcase classname="Service.ServiceAssignmentTest" name="test7" time="0.009"/>
-  <testcase classname="Service.ServiceAssignmentTest" name="test8" time="0.001"/>
-  <testcase classname="Service.ServiceAssignmentTest" name="test9" time="0"/>
+  <testcase classname="Service.ServiceAssignmentTest" name="test4" time="0.001"/>
+  <testcase classname="Service.ServiceAssignmentTest" name="test5" time="0"/>
+  <testcase classname="Service.ServiceAssignmentTest" name="test6" time="0.001"/>
+  <testcase classname="Service.ServiceAssignmentTest" name="test7" time="0.011"/>
+  <testcase classname="Service.ServiceAssignmentTest" name="test8" time="0"/>
+  <testcase classname="Service.ServiceAssignmentTest" name="test9" time="0.001"/>
 </testsuite>

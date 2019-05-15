@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+    <div>
+
+        <h5>Add student</h5>
+        <hr/>
+
+        <form action="#" th:action="@{/add-student}" method="post">
+            <div>
+                <label>Id:</label>
+                <input id="idInput" name="id" required/>
+            </div>
+            <div>
+                <label>Name:</label>
+                <input id="nameInput" name="name" required/><br/>
+            </div>
+            <div>
+                <label>Group:</label>
+                <input id="groupInput" name="gr" required/><br/>
+            </div>
+            <div>
+                <label>Email</label>
+                <input id="emailInput" name="email" required/><br/>
+            </div>
+            <div>
+                <label>Prof</label>
+                <input id="profInput" name="prof" required/><br/>
+            </div>
+            <input value="Submit" id="submitBtn" type="submit">
+        </form>
+
+        <div th:id="resultDiv" th:if="${yes}" th:text="${yes}"></div>
+        <div th:id="resultDiv" th:if="${no}" th:text="${no}"></div>
+
+
+    </div>
+</body>
+</html>

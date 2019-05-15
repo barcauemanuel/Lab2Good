@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: vvss.features.addStudent.AddStudentStory
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 7.995 sec <<< FAILURE! - in vvss.features.addStudent.AddStudentStory
+opens_add_student_page_types_invalid_data_clicks_submit_button_should_see_error_message(vvss.features.addStudent.AddStudentStory)  Time elapsed: 1.286 sec  <<< ERROR!
+net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html). See below for more details.
+	at vvss.features.addStudent.AddStudentStory.opens_add_student_page_types_invalid_data_clicks_submit_button_should_see_error_message(AddStudentStory.java:32)
+
+opens_add_student_page_types_valid_data_clicks_submit_button_should_see_added_message(vvss.features.addStudent.AddStudentStory)  Time elapsed: 0.562 sec  <<< ERROR!
+net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html). See below for more details.
+	at vvss.features.addStudent.AddStudentStory.opens_add_student_page_types_valid_data_clicks_submit_button_should_see_added_message(AddStudentStory.java:24)
+
